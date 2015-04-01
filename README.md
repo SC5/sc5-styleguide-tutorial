@@ -1,5 +1,6 @@
 SC5 Styleguide Tutorial
 =======================
+[![Dependency Status](https://david-dm.org/SC5/sc5-styleguide-tutorial.png)](https://david-dm.org/SC5/sc5-styleguide-tutorial)
 
 This is an example/tutorial styleguide for learning the basics of styleguide driven development.
 
