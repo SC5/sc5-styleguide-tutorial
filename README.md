@@ -17,7 +17,7 @@ To get started you need to install npm, clone this repository from github, type 
 Styleguide Basics
 -----------------
 
-The SC5 Styleguide reads your projects LESS/SASS/CSS files for KSS notation and hosts an interactive presentation of your styles and their intended uses. For the styleguide to be useful your styles need to be KSS annotated. The styleguide also expects you to provide the compiled CSS output for styling the elements when they are displayed to the user. This way you retain full control over the CSS compilation.
+The SC5 Styleguide reads your projects LESS/SASS/SCSS/CSS files for KSS notation and hosts an interactive presentation of your styles and their intended uses. For the styleguide to be useful your styles need to be KSS annotated. The styleguide also expects you to provide the compiled CSS output for styling the elements when they are displayed to the user. This way you retain full control over the CSS compilation.
 
 http://www.w3.org/Style/CSS/
 http://sass-lang.com/
