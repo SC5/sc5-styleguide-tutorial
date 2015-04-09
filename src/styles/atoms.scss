@@ -1,0 +1,126 @@
+
+// This import should not be needed.
+// TODO: Remove the import once bug #567 in style guide is fixed.
+@import 'variables';
+
+// Atoms
+//
+// This is the atoms chapter. Atoms are the only parts that contain actual class and style definitions. The higher level abastractions are mere composites of the existing atoms.
+//
+// Styleguide 1.0
+
+// Person Information Card Atom
+//
+// An info card with the name and description of a person.
+//
+// .eg-person-info_designer - the person is a designer
+// .eg-person-info_developer - the person is a software developer
+// default - asdf
+//
+// markup:
+// <div class="eg-person-info {$modifiers}">
+//   <div class="eg-person-info__name">Name of the person</div>
+//   <div class="eg-person-info__description">
+//     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut
+//     dignissim neque. Suspendisse semper eu metus a congue. Morbi ultrices
+//     venenatis eros at placerat. Mauris gravida lacinia justo sit amet
+//     sodales.
+//   </div>
+// </div>
+//
+// Styleguide 1.1
+
+.eg-person-info {
+
+  font-family: $eg-default-fonts;
+  border: thin solid $eg-color-black;
+
+  .eg-person-info__name {
+    font-size: 1.2em;
+    background-color: $eg-color-orange;
+    padding: $eg-spacings;
+  }
+
+  .eg-person-info__description {
+    padding: $eg-spacings;
+  }
+
+  &.eg-person-info_designer {
+    .eg-person-info__name {
+      background-color:  $eg-color-cyan;
+    }
+  }
+
+  &.eg-person-info_developer {
+    .eg-person-info__name {
+      background-color: $eg-color-brown;
+    }
+  }
+}
+
+// Vertical Container Atom
+//
+// A container for elements with vertical spacing
+//
+// markup:
+// <div class="eg-vertical-container">
+//   <div class="eg-vertical-container__element">
+//     <div class="styleguide-placeholder">placeholder</div>
+//   </div>
+//   <div class="eg-vertical-container__element">
+//     <div class="styleguide-placeholder">placeholder</div>
+//   </div>
+// </div>
+//
+// sg-wrapper:
+// <div class="sg-wrapper">
+//   <sg-wrapper-content/>
+// </div>
+//
+// Styleguide 1.2
+
+.eg-vertical-container {
+
+  .eg-vertical-container__element {
+
+    padding-top: $eg-spacings;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+// Page Heading
+//
+// The main heading on a page.
+//
+// markup:
+// <h1 class="eg-page-heading">Page Heading</h1>
+//
+// Styleguide 1.3
+
+.eg-page-heading {
+  font-family: $eg-default-fonts;
+  font-size: 40px;
+}
+
+// Text paragraph
+//
+// A text paragraph.
+//
+// markup:
+// <p class="eg-paragraph">
+//   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius ex
+//   pharetra nisl mattis commodo. Duis egestas nec lacus sit amet vestibulum.
+//   Phasellus vitae tincidunt mi, quis ornare est. Nam purus magna, gravida a
+//   aliquam ac, cursus posuere neque. Suspendisse id dictum sem, ut rutrum
+//   nisi.  In hac habitasse platea dictumst. Maecenas aliquet, neque sit amet
+//   mollis sagittis, sem nulla placerat tellus, eu blandit lorem nunc a massa.
+// </p>
+//
+// Styleguide 1.4
+
+.eg-paragraph {
+  font-family: $eg-default-fonts;
+}
