@@ -19,17 +19,17 @@ Styleguide Basics
 
 The SC5 Styleguide reads your projects LESS/SASS/SCSS/CSS files for KSS notation and hosts an interactive presentation of your styles and their intended uses. For the styleguide to be useful your styles need to be KSS annotated. The styleguide also expects you to provide the compiled CSS output for styling the elements when they are displayed to the user. This way you retain full control over the CSS compilation.
 
-http://www.w3.org/Style/CSS/
-http://sass-lang.com/
-http://lesscss.org/
-http://warpspire.com/posts/kss/
+* http://www.w3.org/Style/CSS/
+* http://sass-lang.com/
+* http://lesscss.org/
+* http://warpspire.com/posts/kss/
 
 Semantics of Your Styleguide
 ----------------------------
 
 When you are creating a styleguide your team needs to agree on how you will contruct your project. Different ways may suit different projects and teams. In this tutorial we familiarize ourselves with an approach inspired by the Philip Walton's essay "CSS Architecture", Brad Frost's "Atomic web design" concept and BEM naming from Yandex.
 
-http://philipwalton.com/articles/css-architecture/
-http://bradfrost.com/blog/post/atomic-web-design/
-http://bem.info/
+* http://philipwalton.com/articles/css-architecture/
+* http://bradfrost.com/blog/post/atomic-web-design/
+* http://bem.info/
 
