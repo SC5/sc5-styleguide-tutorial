@@ -10,8 +10,8 @@ var styleguide = require('sc5-styleguide');
 var sourcePath = 'src';
 var htmlWild = sourcePath + '/**/*.html';
 var styleSourcePath = sourcePath + '/styles';
-var sassWild = styleSourcePath + '/**/*.scss';
-var sassRoot = styleSourcePath + '/tutorial.scss';
+var scssWild = styleSourcePath + '/**/*.scss';
+var scssRoot = styleSourcePath + '/tutorial.scss';
 
 var buildPath = 'build';
 var styleBuildPath = buildPath + '/styles';
@@ -35,8 +35,8 @@ gulp.task('html', function() {
         .pipe(gulp.dest(buildPath));
 });
 
-gulp.task('sass', function() {
-    return gulp.src(sassWild)
+gulp.task('scss', function() {
+    return gulp.src(scssWild)
         .pipe(sass())
         .pipe(gulp.dest(styleBuildPath));
 });
@@ -51,7 +51,7 @@ gulp.task('sass', function() {
 // styles.
 
 gulp.task('staticStyleguide:generate', function() {
-  return gulp.src(sassWild)
+  return gulp.src(scssWild)
     .pipe(styleguide.generate({
         title: 'My First Hosted Styleguide',
         rootPath: styleguideBuildPath,
@@ -62,7 +62,7 @@ gulp.task('staticStyleguide:generate', function() {
 });
 
 gulp.task('staticStyleguide:applystyles', function() {
-  return gulp.src(sassRoot)
+  return gulp.src(scssRoot)
     .pipe(sass({
       errLogToConsole: true
     }))
@@ -79,7 +79,7 @@ gulp.task('staticStyleguide', ['staticStyleguide:generate', 'staticStyleguide:ap
 // styles are modified.
 
 gulp.task('styleguide:generate', function() {
-  return gulp.src(sassWild)
+  return gulp.src(scssWild)
     .pipe(styleguide.generate({
         title: 'My First Development Styleguide',
         server: true,
@@ -90,7 +90,7 @@ gulp.task('styleguide:generate', function() {
 });
 
 gulp.task('styleguide:applystyles', function() {
-  return gulp.src(sassRoot)
+  return gulp.src(scssRoot)
     .pipe(sass({
       errLogToConsole: true
     }))
@@ -102,9 +102,9 @@ gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
 
 // Developer mode
 
-gulp.task('dev', ['html', 'sass', 'styleguide'], function() {
+gulp.task('dev', ['html', 'scss', 'styleguide'], function() {
     gulp.watch(htmlWild, ['html']);
-    gulp.watch(sassWild, ['sass', 'styleguide']);
+    gulp.watch(scssWild, ['scss', 'styleguide']);
     console.log(
         '\nDeveloper mode!\n\nSC5 Styleguide available at http://localhost:3000/\n'
     );
@@ -112,7 +112,7 @@ gulp.task('dev', ['html', 'sass', 'styleguide'], function() {
 
 // The basic build task
 
-gulp.task('default', ['html', 'sass', 'staticStyleguide'], function() {
+gulp.task('default', ['html', 'scss', 'staticStyleguide'], function() {
     console.log(
         '\nBuild complete!\n\nFresh build available in directory: ' +
         buildPath + '\n\nCheckout the build by commanding\n' +
