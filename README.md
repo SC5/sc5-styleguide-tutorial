@@ -4,8 +4,15 @@ SC5 Styleguide Tutorial
 
 This is an example project and tutorial for learning the basics of styleguide driven development.
 
-About Styleguide
-----------------
+Table of Contents
+-----------------
+
+* [About the Styleguide Generator](#about-the-styleguide-generator)
+* [About the Tutorial](#about-the-tutorial)
+* [Getting Started](#getting-started)
+
+About the Styleguide Generator
+------------------------------
 
 The SC5 Styleguide reads your projects [LESS](http://lesscss.org/), [SASS / SCSS](http://sass-lang.com/) or [CSS](http://www.w3.org/Style/CSS/) files and generates documentation for your styles based on some metadata that you need to provide. The metadata needs to be provided in a specific KSS based format. The format is a mixture of the original [KSS](https://github.com/kneath/kss) and the [node-kss](https://github.com/kss-node/kss-node) with some SC5 Styleguide specific [additions](https://github.com/SC5/sc5-styleguide#user-content-documenting-syntax).
 
