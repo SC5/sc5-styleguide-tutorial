@@ -9,10 +9,14 @@
 // Template for pages that list people.
 //
 // markup:
-// <h1 class="eg-page-heading">Person Page Title</h1>
-// <p class="eg-paragraph">Explanation of the purpose of this person listing.</p>
-// <div class="eg-vertical-container">
-//   <div class="eg-vertical-container__element">
+// <div class="eg-grid">
+//   <div class="eg-grid__item-1-1">
+//     <h1 class="eg-page-heading">Person Page Title</h1>
+//     <p class="eg-paragraph">Explanation of the purpose of this person listing.</p>
+//   </div>
+// </div>
+// <div class="eg-grid">
+//   <div class="eg-grid__item-1-2">
 //     <div class="eg-person-info">
 //       <div class="eg-person-info__name">Name of a person</div>
 //       <div class="eg-person-info__description">
@@ -23,7 +27,7 @@
 //       </div>
 //     </div>
 //   </div>
-//   <div class="eg-vertical-container__element">
+//   <div class="eg-grid__item-1-2">
 //     <div class="eg-person-info">
 //       <div class="eg-person-info__name">Name of another person</div>
 //       <div class="eg-person-info__description">
