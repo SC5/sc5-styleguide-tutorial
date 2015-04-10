@@ -2,12 +2,23 @@ SC5 Styleguide Tutorial
 =======================
 [![Dependency Status](https://david-dm.org/SC5/sc5-styleguide-tutorial.png)](https://david-dm.org/SC5/sc5-styleguide-tutorial)
 
-This is an example/tutorial styleguide for learning the basics of styleguide driven development.
+This is an example project and tutorial for learning the basics of styleguide driven development.
+
+About Styleguide
+----------------
+
+The SC5 Styleguide reads your projects [LESS](http://lesscss.org/), [SASS / SCSS](http://sass-lang.com/) or [CSS](http://www.w3.org/Style/CSS/) files for KSS notation and hosts an interactive presentation of your styles and their intended uses. For the styleguide to be useful your styles need to be KSS annotated.
+
+The KSS format used by the SC5 Styleguide is a mixture of the original [KSS](https://github.com/kneath/kss) and the [node-kss](https://github.com/kss-node/kss-node) with some SC5 Styleguide specific [additions](https://github.com/SC5/sc5-styleguide#user-content-documenting-syntax).
+
+The styleguide expects you to also provide the compiled CSS output for styling the elements when they are displayed to the user. This way you retain full control over the CSS compilation. And get to use your preferred compiler with what ever settings you like.
 
 About the Tutorial
 ------------------
 
 This tutorial should cover everything you need to try out style guide driven development. We take you through the steps of installing and running style guide, creating a semantic for your project and creating and documenting your styles. Ideally you should have your own project in the back of your head to reflect upon what you learn here but we will provide some ideas for people who want to take the course for the sake of learning.
+
+When you are creating an actual styleguide your team needs to agree on the semantics of how you will contruct your project. Different ways may suit different projects and teams. In this tutorial we familiarize ourselves with an approach inspired by the Philip Walton's essay "[CSS Architecture](http://philipwalton.com/articles/css-architecture/)", Brad Frost's "[Atomic web design](http://bradfrost.com/blog/post/atomic-web-design/)" concept and [BEM](http://bem.info/) naming from Yandex.
 
 Getting Started
 ---------------
@@ -49,22 +60,33 @@ gulp dev
 
 In development mode styleguide will monitor your changes to the example styles that you can find under src/styles/ in your sc5-styleguide-tutorial directory. User your favourite text editor to modify the scss files. The styleguide should be automatically to match your changes. In case of an error you may find an error message in the console where you are running gulp. You may end the developer mode by pressing the c key while holding down the ctrl key.
 
-Styleguide Basics
------------------
+Once the files have downloaded you may change to the tutorial directory and get all dependencies.
+```
+cd sc5-styleguide-tutorial
+npm install
+```
 
-The SC5 Styleguide reads your projects LESS/SASS/SCSS/CSS files for KSS notation and hosts an interactive presentation of your styles and their intended uses. For the styleguide to be useful your styles need to be KSS annotated. The styleguide also expects you to provide the compiled CSS output for styling the elements when they are displayed to the user. This way you retain full control over the CSS compilation.
+If you have not used gulp before you should also install a global gulp to get the gulp command added to your environment.
+```
+npm install -g gulp
+```
 
-* http://www.w3.org/Style/CSS/
-* http://sass-lang.com/
-* http://lesscss.org/
-* http://warpspire.com/posts/kss/
+Next you need to build the example project. Just running gulp without any arguments will build both the project and the styleguide.
+```
+gulp
+```
 
-Semantics of Your Styleguide
-----------------------------
+The generated project and styleguide should now exist in the build directory. You may examine the styleguide by serving to the browser with some web server software. Here we demonstrate making the files available to http://localhost:8000/ and http://localhost:8000/styleguide/ using the Python SimpleHTTPServer module. However, if you don't have that installed or all of this seems over the top, do not worry, just skip this step and you'll be alright.
+```
+(cd build; python -m SimpleHTTPServer)
+```
 
-When you are creating a styleguide your team needs to agree on how you will contruct your project. Different ways may suit different projects and teams. In this tutorial we familiarize ourselves with an approach inspired by the Philip Walton's essay "CSS Architecture", Brad Frost's "Atomic web design" concept and BEM naming from Yandex.
+To end the SimpleHTTPServer running from the previous step you need to end it first by pressing the c key while holding down the ctrl key. This will print some ugly error messages on the screen. Don't worry. It is to be expected.
 
-* http://philipwalton.com/articles/css-architecture/
-* http://bradfrost.com/blog/post/atomic-web-design/
-* http://bem.info/
+Building the project will become tiresome when you are constantly developing styles and markup. Therefore the styleguide has a developer mode with a built-in server that will make the styleguide available at http://localhost:3000/ Try it!
+```
+gulp dev
+```
+
+In development mode styleguide will monitor your changes to the example styles that you can find under src/styles/ in your sc5-styleguide-tutorial directory. User your favourite text editor to modify the scss files. The styleguide should be automatically to match your changes. In case of an error you may find an error message in the console where you are running gulp. You may end the developer mode by pressing the c key while holding down the ctrl key.
 
