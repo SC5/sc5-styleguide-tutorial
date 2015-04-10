@@ -10,7 +10,6 @@ Table of Contents
 -----------------
 
 * [About the Styleguide Generator](#about-the-styleguide-generator)
-* [About the Tutorial](#about-the-tutorial)
 * [Getting Started](#getting-started)
 * [Navigatin the Tutorial](#navigating-the-tutorial)
 
