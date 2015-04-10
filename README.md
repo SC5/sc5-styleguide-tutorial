@@ -2,7 +2,9 @@ SC5 Styleguide Tutorial
 =======================
 [![Dependency Status](https://david-dm.org/SC5/sc5-styleguide-tutorial.png)](https://david-dm.org/SC5/sc5-styleguide-tutorial)
 
-This is an example project and tutorial for learning the basics of styleguide driven development.
+This is an example project and tutorial for learning the basics of styleguide driven development. This tutorial should cover everything you need to try out style guide driven development. We take you through the steps of installing and running style guide, creating a semantic for your project and creating and documenting your styles. Ideally you should have your own project in the back of your head to reflect upon what you learn here but we will provide some ideas for people who want to take the course for the sake of learning.
+
+When you are creating an actual styleguide your team needs to agree on the semantics of how you will contruct your project. Different ways may suit different projects and teams. However it is impossible to write a sensible style guide tutorial without taking a stance on how these issues should be solved. Therefore, to complete this tutorial the reader may need to put his personal opinions aside. The approach promoted in this tutorial is inspired by the Philip Walton's essay "[CSS Architecture](http://philipwalton.com/articles/css-architecture/)", Brad Frost's "[Atomic web design](http://bradfrost.com/blog/post/atomic-web-design/)" concept and [BEM](http://bem.info/) naming from Yandex. However, the tutorial does not attempt to be fully compliant with any one of these approaches.
 
 Table of Contents
 -----------------
@@ -10,6 +12,7 @@ Table of Contents
 * [About the Styleguide Generator](#about-the-styleguide-generator)
 * [About the Tutorial](#about-the-tutorial)
 * [Getting Started](#getting-started)
+* [Navigatin the Tutorial](#navigating-the-tutorial)
 
 About the Styleguide Generator
 ------------------------------
@@ -19,13 +22,6 @@ The SC5 Styleguide reads your projects [LESS](http://lesscss.org/), [SASS / SCSS
 Your styleguide will only be as good as the metadata you provide but using a styleguide generator may be a good way of motivating you to write that metadata. The metadata should describe where certain styles are appropriate, what kind of HTML markup should be used to refer the styles and how the different markup can be combined to achieve more complex parts of the user interface. 
 
 Adding all new user interface parts to the style guide first encourages thinking through the user interface and the markup before writing the code. It also makes it possible to review the user interface before the related functionalties are implemented. Finally the provided example markup works as test cases for the styles and their cross platform compatibility can easily be verified by viewing the style guide itself on different devices and screen sizes.
-
-About the Tutorial
-------------------
-
-This tutorial should cover everything you need to try out style guide driven development. We take you through the steps of installing and running style guide, creating a semantic for your project and creating and documenting your styles. Ideally you should have your own project in the back of your head to reflect upon what you learn here but we will provide some ideas for people who want to take the course for the sake of learning.
-
-When you are creating an actual styleguide your team needs to agree on the semantics of how you will contruct your project. Different ways may suit different projects and teams. In this tutorial we familiarize ourselves with an approach inspired by the Philip Walton's essay "[CSS Architecture](http://philipwalton.com/articles/css-architecture/)", Brad Frost's "[Atomic web design](http://bradfrost.com/blog/post/atomic-web-design/)" concept and [BEM](http://bem.info/) naming from Yandex.
 
 Getting Started
 ---------------
@@ -97,3 +93,7 @@ gulp dev
 
 In development mode styleguide will monitor your changes to the example styles that you can find under src/styles/ in your sc5-styleguide-tutorial directory. User your favourite text editor to modify the scss files. The styleguide should be automatically to match your changes. In case of an error you may find an error message in the console where you are running gulp. You may end the developer mode by pressing the c key while holding down the ctrl key.
 
+Navigating the Tutorial
+-----------------------
+
+The tutorial will continue inside the example style guide. Each chapter contains example content, explanations and exercises. The reader adviced to go through the chapters in order studying one chapter at a time, doing the exercises even where they may seem trivial. We hope that the exercises will help the reader remember the essential parts of the tutorial. There is no scoring, there are no exams. You are on your own. Good luck!
