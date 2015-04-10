@@ -9,7 +9,11 @@
 // The header at the top of each page
 //
 // markup:
-// <h1 class="eg-page-heading">Page Title</h1>
-// <p class="eg-paragraph">Explanation of the purpose of the page.</p>
+// <div class="eg-grid">
+//   <div class="eg-grid__item-1-1">
+//     <h1 class="eg-page-heading">Page Title</h1>
+//     <p class="eg-paragraph">Explanation of the purpose of the page.</p>
+//   </div>
+// </div>
 //
 // Styleguide 3.1
