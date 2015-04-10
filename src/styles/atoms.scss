@@ -26,9 +26,9 @@
 // It makes sense to scope the element and modifier styles so they only work within the
 // correct containing block.
 //
-// Exercise1: Add support for a third role "administrator" to the card styles.
+// Exercise 1.1a: Add support for a third role "administrator" to the card styles.
 //
-// Exercise2: Add support for a "title" element to the card.
+// Exercise 1.1b: Add support for a "title" element to the card.
 //
 // .eg-person-info_role_designer - the person is a designer
 // .eg-person-info_role_developer - the person is a software developer
@@ -84,7 +84,7 @@
 // grid. Checkout https://css-tricks.com/dont-overthink-it-grids/ and
 // http://getuikit.com/docs/grid.html
 //
-// Excersise: Try adding support for items with 1-3 and 2-3 ratios.
+// Exercise 1.2a: Try adding support for items with 1-3 and 2-3 ratios.
 //
 // markup:
 // <div class="eg-grid">
@@ -144,6 +144,18 @@
 //
 // The main heading on a page.
 //
+// Note that while we use h1 in the markup since it may help some user agents.
+// Our selector does not mention h1. There are several reasons for this.
+// The most important is that we do not want our styles to leak to h1 elements
+// that do not explicitly request styling. While we could define a selector
+// that looks like h1.eg-page-heading we should not do this since we can not
+// know on forehand if we will need to apply the same styling for other elements
+// as well. Doing it this way minimizes delays when we encounter such special
+// cases.
+//
+// Exercise 1.3a: Explain to a rubber duck why using HTML element names in
+// selectors is a bad idea.
+//
 // markup:
 // <h1 class="eg-page-heading">Page Heading</h1>
 //
@@ -157,6 +169,20 @@
 // Text paragraph
 //
 // A text paragraph.
+//
+// Just like with headings the text paragraph style does not use the HTML
+// element name p as a part of the selector. However it is still likely that
+// the paragraph class be often used in conjunction with the p element since
+// the application developer may wish to indicate in the HTML that that part
+// of the user interface is in fact a text paragraph. While this should not
+// be a problem since the style definitions for standard HTML elements may
+// vary between browsers. In such cases you may need to do a reset for the
+// element. We do just that in the file reset.scss where we allow ourselves
+// to use HTML element names in selectors. However we try to keep this to
+// a minimum.
+//
+// Exercise 1.4a: Take a look at the reset.scss so you'll know how to deal
+// with differences in default style sheets of different browsers.
 //
 // markup:
 // <p class="eg-paragraph">
