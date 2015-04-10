@@ -8,6 +8,14 @@
 //
 // The header at the top of each page
 //
+// The organisms depict how some atoms and molecules are used together to compose some
+// larger part of the site that is used in several contexts to solve some usecase that
+// is shared between different pages. A page header, a page footer, a menu bar, a top bar
+// are all examples of typical organisms. Organisms are more like containers that may
+// contain heterogenous stuff that need to be displayed together to solve a problem
+// that the user is having. Navigation being the clearest example. Just like molecules
+// the organisms do **not** either contain style definitions or introduce new class names.
+//
 // markup:
 // <div class="eg-grid">
 //   <div class="eg-grid__item-1-1">

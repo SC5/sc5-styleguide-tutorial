@@ -9,6 +9,14 @@
 //
 // List of people with information about them.
 //
+// The purpose of a molecule is to combine several atoms to compose meaningful
+// components. For example this people listing molecule is composed of the
+// Simple Grid Atom and the Person Information Card Atom. Note that, unlike
+// atoms, molecules and other higher level pieces do **not** contain any style
+// defitnitions and do **not** introduce new class names. This proves that they
+// can be composed from the available atoms. It may also help you write
+// reusable style definitions.
+//
 // markup:
 // <div class="eg-grid">
 //   <div class="eg-grid__item-1-2">
@@ -25,6 +33,17 @@
 //   <div class="eg-grid__item-1-2">
 //     <div class="eg-person-info">
 //       <div class="eg-person-info__name">Name of another person</div>
+//       <div class="eg-person-info__description">
+//         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut
+//         dignissim neque. Suspendisse semper eu metus a congue. Morbi ultrices
+//         venenatis eros at placerat. Mauris gravida lacinia justo sit amet
+//         sodales.
+//       </div>
+//     </div>
+//   </div>
+//   <div class="eg-grid__item-1-2">
+//     <div class="eg-person-info">
+//       <div class="eg-person-info__name">Name of yet another person</div>
 //       <div class="eg-person-info__description">
 //         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut
 //         dignissim neque. Suspendisse semper eu metus a congue. Morbi ultrices
