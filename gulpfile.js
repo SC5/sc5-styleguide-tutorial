@@ -36,7 +36,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('scss', function() {
-    return gulp.src(scssWild)
+    return gulp.src(scssRoot)
         .pipe(sass())
         .pipe(gulp.dest(styleBuildPath));
 });
