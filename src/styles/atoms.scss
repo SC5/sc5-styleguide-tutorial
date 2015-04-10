@@ -84,7 +84,7 @@
 // grid. Checkout https://css-tricks.com/dont-overthink-it-grids/ and
 // http://getuikit.com/docs/grid.html
 //
-// Exercise 1.2a: Try adding support for items with 1-3 and 2-3 ratios.
+// Exercise 1.2a: Add support for items with 1-3 and 2-3 ratios.
 //
 // markup:
 // <div class="eg-grid">
@@ -115,7 +115,8 @@
 // Styleguide 1.2
 
 .eg-grid {
-  margin-left: -$eg-spacings 0 0 -$eg-spacings;
+
+  margin-left: -$eg-spacings;
 
   &:after {
     content: "";
@@ -125,7 +126,8 @@
 
   [class*='eg-grid__item-'] {
     float: left;
-    padding: $eg-spacings 0 0 $eg-spacings;
+    padding-left: $eg-spacings;
+    padding-bottom: $eg-spacings;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
