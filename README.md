@@ -4,8 +4,6 @@ SC5 Styleguide Tutorial
 
 This is an example project and tutorial for learning the basics of styleguide driven development. This tutorial should cover everything you need to try out style guide driven development. We take you through the steps of installing and running style guide, creating a semantic for your project and creating and documenting your styles. Ideally you should have your own project in the back of your head to reflect upon what you learn here but we will provide some ideas for people who want to take the course for the sake of learning.
 
-When you are creating an actual styleguide your team needs to agree on the semantics of how you will contruct your project. Different ways may suit different projects and teams. However it is impossible to write a sensible style guide tutorial without taking a stance on how these issues should be solved. Therefore, to complete this tutorial the reader may need to put his personal opinions aside. The approach promoted in this tutorial is inspired by the Philip Walton's essay "[CSS Architecture](http://philipwalton.com/articles/css-architecture/)", Brad Frost's "[Atomic web design](http://bradfrost.com/blog/post/atomic-web-design/)" concept and [BEM](http://bem.info/) naming from Yandex. However, the tutorial does not attempt to be fully compliant with any one of these approaches.
-
 Table of Contents
 -----------------
 

@@ -12,6 +12,7 @@ var htmlWild = sourcePath + '/**/*.html';
 var styleSourcePath = sourcePath + '/styles';
 var scssWild = styleSourcePath + '/**/*.scss';
 var scssRoot = styleSourcePath + '/tutorial.scss';
+var overviewPath = styleSourcePath + '/README.md';
 
 var buildPath = 'build';
 var styleBuildPath = buildPath + '/styles';
@@ -56,7 +57,7 @@ gulp.task('staticStyleguide:generate', function() {
         title: 'My First Hosted Styleguide',
         rootPath: styleguideBuildPath,
         appRoot: styleguideAppRoot,
-        overviewPath: 'README.md'
+        overviewPath: overviewPath
       }))
     .pipe(gulp.dest(styleguideBuildPath));
 });
@@ -84,7 +85,7 @@ gulp.task('styleguide:generate', function() {
         title: 'My First Development Styleguide',
         server: true,
         rootPath: styleguideTmpPath,
-        overviewPath: 'README.md'
+        overviewPath: overviewPath
       }))
     .pipe(gulp.dest(styleguideTmpPath));
 });
