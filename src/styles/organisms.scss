@@ -1,6 +1,12 @@
 // Organisms
 //
-// This is the organisms chapter.
+// This is the organisms chapter.  The organisms depict how some atoms and
+// molecules are used together to compose some larger part of the application
+// that is used in several contexts to solve some usecase. While molecules
+// provide reusable elements that that could be used in different products, the
+// organisms consist of heterogenous stuff that need to be displayed together
+// in a particular application. Just like molecules the organisms do **not**
+// either contain style definitions or introduce new class names.
 //
 // Styleguide 3.0
 
@@ -8,13 +14,12 @@
 //
 // The header at the top of each page
 //
-// The organisms depict how some atoms and molecules are used together to compose some
-// larger part of the site that is used in several contexts to solve some usecase that
-// is shared between different pages. A page header, a page footer, a menu bar, a top bar
-// are all examples of typical organisms. Organisms are more like containers that may
-// contain heterogenous stuff that need to be displayed together to solve a problem
-// that the user is having. Navigation being the clearest example. Just like molecules
-// the organisms do **not** either contain style definitions or introduce new class names.
+// The top bar or header is a good example of an organism. It solves the
+// usecase of navigation. In our overly simple example application the header
+// only displayes the name and purpose of the view since we don't really have
+// navigation.
+//
+// Exercise 3.1a: Change the existing *Page Header Organism* to take only 2/3 of the horizontal space by modifying the markup. Then add new markup that adds the [Search Molecule](/section/2.2) to the remaining 1/3 of the space.
 //
 // markup:
 // <div class="eg-grid">

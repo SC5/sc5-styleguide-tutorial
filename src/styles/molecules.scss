@@ -1,7 +1,28 @@
 
 // Molecules
 //
-// This is the molecules chapter.
+// This is the molecules chapter. The purpose of a molecule is to combine
+// several atoms to compose meaningful components. Note that, unlike atoms,
+// molecules and other higher level pieces do **not** contain any style
+// definitions and do **not** introduce new class names.
+//
+// Refusing to introduce new style definitions above the atom level proves that
+// the atom library has enough coverage to support your site. Introducing all
+// new style definitions through new atoms promotes reuse. It also helps to
+// mitigate against side effects where some classes cause different styling
+// depending on the DOM structure.
+//
+// Class names used in style guide examples should only refer to styling and
+// since molecules do not introduce new styles there should be no need to
+// introduce new class names either. Classes used for binding the component to
+// javascript depend on the context and should therefore not exist in the style
+// guide.
+//
+// When using a component on the site the developer needs to attach binding
+// classes to the component. We suggest that you prefix such binding classes
+// with js-. For example you could have js-save-on-click class defined on a
+// button to bind it to some saving functionality implemented in your
+// application.
 //
 // Styleguide 2.0
 
@@ -9,13 +30,7 @@
 //
 // List of people with information about them.
 //
-// The purpose of a molecule is to combine several atoms to compose meaningful
-// components. For example this people listing molecule is composed of the
-// Simple Grid Atom and the Person Information Card Atom. Note that, unlike
-// atoms, molecules and other higher level pieces do **not** contain any style
-// defitnitions and do **not** introduce new class names. This proves that they
-// can be composed from the available atoms. It may also help you write
-// reusable style definitions.
+// The people listing molecule is composed of the Simple Grid Atom and the Person Information Card Atom.
 //
 // markup:
 // <div class="eg-grid">
@@ -55,3 +70,11 @@
 // </div>
 //
 // Styleguide 2.1
+
+// Search Molecule
+//
+// A search field and a button.
+//
+// Exercise 2.2a: Add example markup to show that the [Simple Grid Atom](/section/1.2), the [Input Field Atom](/section/1.5) and the [Push Button Atom](/section/1.6) can be composed using markup only, to form a search component where a user can type in some search terms and trigger a search by clicking on the button. Note that the exercise is only about markup and style. For this exercise we recommend reserving 2/3 of horizontal space for the input field and 1/3 of horizontal space for the button, so you can use the grid you have developed so far.
+//
+// Styleguide 2.2

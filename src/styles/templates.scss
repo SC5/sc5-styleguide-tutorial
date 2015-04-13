@@ -1,12 +1,16 @@
 // Templates
 //
-// This is the page templates chapter.
+// This is the page templates chapter. Templates show what complete view look like and prove that your views are composable from the lower level items you have defined without the need to create ad-hoc style definitions.
 //
 // Styleguide 4.0
 
 // People Listing Page Template
 //
 // Template for pages that list people.
+//
+// Here we bring the Page Header Organism and the People Listing Molecule together as a People Listing Page Template to prove that they can be used to create pages that list people.
+//
+// Exercise 4.1a: Update the page template to match the changes done to the Page Header Organism in Exercise 3.1a.
 //
 // markup:
 // <div class="eg-grid">
