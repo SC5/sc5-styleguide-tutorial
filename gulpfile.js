@@ -22,7 +22,7 @@ var styleguideBuildPath = buildPath + styleguideAppRoot;
 var tmpPath = 'tmp';
 var styleguideTmpPath = tmpPath + '/styleguide';
 
-// Building the actual site/app
+// Building the application
 //
 // In reality the app would ofcourse be a lot more complex.
 // Here the app simply consists of some HTML so we get to examine how
@@ -42,7 +42,7 @@ gulp.task('scss', function() {
         .pipe(gulp.dest(styleBuildPath));
 });
 
-// Building styleguide for static hosting to be displayed as a part of the site
+// Building styleguide for static hosting to be displayed as a part of the application
 //
 // Here we build the styleguide so it can be included in a web folder within the app.
 // The benefit for including the styleguide at /styleguide path of the app is that
