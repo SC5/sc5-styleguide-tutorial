@@ -7,10 +7,10 @@
 // definitions and do **not** introduce new class names.
 //
 // Refusing to introduce new style definitions above the atom level proves that
-// the atom library has enough coverage to support your site. Introducing all
-// new style definitions through new atoms promotes reuse. It also helps to
-// mitigate against side effects where some classes cause different styling
-// depending on the DOM structure.
+// the atom library has enough coverage to support your application.
+// Introducing all new style definitions through new atoms promotes reuse. It
+// also helps to mitigate against side effects where some classes cause
+// different styling depending on the DOM structure.
 //
 // Class names used in style guide examples should only refer to styling and
 // since molecules do not introduce new styles there should be no need to
@@ -18,10 +18,10 @@
 // javascript depend on the context and should therefore not exist in the style
 // guide.
 //
-// When using a component on the site the developer needs to attach binding
-// classes to the component. We suggest that you prefix such binding classes
-// with js-. For example you could have js-save-on-click class defined on a
-// button to bind it to some saving functionality implemented in your
+// When using molecules in the application the developer needs to attach
+// binding classes to the components. We suggest that you prefix such binding
+// classes with js-. For example you could have js-save-on-click class defined
+// on a button to bind it to some saving functionality implemented by your
 // application.
 //
 // Styleguide 2.0
