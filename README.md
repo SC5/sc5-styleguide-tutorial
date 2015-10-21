@@ -9,7 +9,7 @@ Table of Contents
 
 * [About the Styleguide Generator](#about-the-styleguide-generator)
 * [Getting Started](#getting-started)
-* [Navigatin the Tutorial](#navigating-the-tutorial)
+* [Navigating the Tutorial](#navigating-the-tutorial)
 
 About the Styleguide Generator
 ------------------------------
