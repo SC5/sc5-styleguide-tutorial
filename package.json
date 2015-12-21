@@ -4,7 +4,7 @@
   "description": "SC5 Styleguide Tutorial",
   "dependencies": {
     "gulp": "^3.8.11",
-    "gulp-sass": "^1.3.3",
+    "gulp-sass": "^2.1.1",
     "sc5-styleguide": "^0.3.10"
   },
   "repository": {
